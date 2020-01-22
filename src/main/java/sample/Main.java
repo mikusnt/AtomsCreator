@@ -14,6 +14,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import javax.vecmath.Vector2d;
 
 public class Main extends Application {
 
@@ -27,7 +28,6 @@ public class Main extends Application {
         Group root = new Group();
         Scene theScene = new Scene( root );
         primaryStage.setScene( theScene );
-
 
         Canvas canvas = new Canvas(windowRes.getMaxX(), windowRes.getMaxY());
         root.getChildren().add( canvas );
